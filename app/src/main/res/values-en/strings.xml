@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- common -->
+    <string name="app_name">CineIt</string>
+    <string name="favorites">Favorites</string>
+
+<!-- dialogs -->
+    <string name="share_dialog_title">Share</string>
+    <string name="share_dialog_message">Share with your friend!</string>
+    <string name="share_sms_message">Hey! Check out this cool film I found.</string>
+    <string name="share_hint_text">Enter phone number</string>
+    <string name="share_sent_toast_confirm_message">Message Sent</string>
+    <string name="share_sent_error_toast_message">Please enter all the data..</string>
+    <string name="send_btn_text">Send</string>
+    <string name="leave_dialog_title">Leave?</string>
+    <string name="leave_dialog_message">Are you sure that you want to exit now?</string>
+
+<!-- names -->
+    <string name="witcher_name">The Witcher</string>
+    <string name="utopia_name">Utopia</string>
+    <string name="arcane_name">Arcane</string>
+    <string name="stranger_things_name">Stranger things</string>
+    <string name="rick_and_morty_name">Rick and Morty</string>
+    <string name="friends_name">Friends</string>
+    <string name="squid_games_name">Squid games</string>
+    <string name="love_death_and_robots_name">Love, Death + Robots</string>
+
+<!-- descriptions -->
+    <string name="witcher_description">Witcher Geralt, a mutant and monster slayer, travels across the Continent on his faithful horse named Roach. For a tight bag of minted coins, this man will save you from any stubborn evil spirits - even from swamp monsters, werewolves and even bewitched princesses. In the rural wilderness, the local girl Yennefer, who was very unlucky with her appearance, but was lucky enough to have the ability to magic, is sold by her father to the sorceress as a student. And the young heiress of the kingdom of Cintra named Ciri is forced to go on the run when their country is captured by the empire of Nilfgaard. The fates of these three will be closely connected, but soon the fairy tale tells, but not soon the deed is done.</string>
+    <string name="utopia_description">Utopia Experiments is a legendary graphic novel shrouded in mystery. The lives of five unfamiliar people, into whose hands he fell, are in jeopardy. When a ruthless secret organization known as the "Network" is on your trail, there is only one way to survive - flight.</string>
+    <string name="arcane_description">Set in the utopian land of Piltover and the brutal underworld of Zaun, the story follows the rise of two legendary League champions and the power that will take them to different sides of the barricades.</string>
+    <string name="stranger_things_description">1980s, quiet provincial American town. The favorable course of local life is disturbed by the mysterious disappearance of a teenager named Will. The boy\'s relatives and the local sheriff are determined to find out the circumstances of the case, and the events also affect Will\'s best friend Mike. He starts his own investigation. Mike is sure that he is close to the solution, and now he has to find himself in the midst of a fierce battle of otherworldly forces.</string>
+    <string name="rick_and_morty_description">«Rick and Morty is an American adult comedy science fiction animated television series created by Justin Roiland and Dan Harmon and produced as part of the Adult Swim block of Cartoon Network. Premiered in December 2013; the second season returned in 2015.</string>
+    <string name="friends_description">The comedy series "Friends" tells about the life of six friends: girls Rachel, Phoebe, Monica and boys Chandler, Ross and Joey. The action takes place mainly in Manhattan around the same time period when the series was filmed - in 1994-2004.</string>
+    <string name="squid_games_description">Song Gi-hoon is no longer young, divorced, deep in debt and sitting on the neck of an old mother. Even the money won at the races does not stay in his hands for a long time, and one day he meets a mysterious stranger on the subway, who first offers to play a child\'s game, and then gives Gi-hoon a considerable amount and a business card. But the man\'s joy will be replaced by despair when he finds out that the ex-wife and her new husband are going to take his daughter to America. He calls the number on his business card and becomes the latest participant in a secret survival game with a $40 million prize.</string>
+    <string name="love_death_and_robots_description">Love, Death &amp; Robots (stylized as LOVE DEATH + R⬮BOTS, and represented in emoji form as ❤️❌🤖) is an adult animated anthology streaming television series created by Tim Miller and streaming on Netflix.[1] Produced by Blur Studio, it consists of stand-alone episodes that contain different narrative and animation and are produced by different animation studios from a range of countries,[2] exploring diverse genres particularly comedy, horror, science fiction, and fantasy. Each episode is connected to the themes of the titular subject matters</string>
+</resources>
