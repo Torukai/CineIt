@@ -1,18 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding = "16dp"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_account_logo"/>
+
+        <TextView
+            android:id="@+id/witcher_preview"
+            android:layout_width="450dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/witcher_image"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal|bottom"
+            android:scaleType="center"
+            android:text="The Witcher"
+            android:textAlignment="gravity"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="5"/>
+
+        <TextView
+            android:id="@+id/utopia_preview"
+            android:layout_width="450dp"
+            android:layout_height="250dp"
+            android:background="@drawable/utopia_cover"
+            android:layout_margin="10dp"
+            android:text="Utopia"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:gravity="center_horizontal|bottom"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="5"/>
+
+        <TextView
+            android:id="@+id/arcane_preview"
+            android:layout_width="450dp"
+            android:layout_height="250dp"
+            android:background="@drawable/arcane_cover"
+            android:layout_margin="10dp"
+            android:text="Arcane"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:gravity="center_horizontal|bottom"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="5"/>
+
+        <TextView
+            android:id="@+id/stranger_things_preview"
+            android:layout_width="450dp"
+            android:layout_height="250dp"
+            android:background="@drawable/stranger_things_cover"
+            android:layout_margin="10dp"
+            android:text="Stranger things"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:gravity="center_horizontal|bottom"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="5"/>
+    </LinearLayout>
+</ScrollView>
