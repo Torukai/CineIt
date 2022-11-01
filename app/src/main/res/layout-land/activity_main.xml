@@ -13,17 +13,21 @@
         android:layout_height="wrap_content"
         app:theme="?android:attr/toolbarStyle">
 
-        <TextView
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/favoritesList"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:background="@color/white"
+            android:theme="@style/Widget.AppCompat.Button.Borderless"
+            android:textStyle="bold"
             android:gravity="center"
-            android:padding="4dp"
+            android:padding="10dp"
+            app:strokeColor="@color/white"
             android:text="@string/favorites"
+            app:cornerRadius="7dp"
             android:textSize="24sp"
             android:layout_gravity="end"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"  />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView

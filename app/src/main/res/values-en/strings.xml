@@ -4,6 +4,17 @@
     <string name="app_name">CineIt</string>
     <string name="favorites">Favorites</string>
 
+<!-- dialogs -->
+    <string name="share_dialog_title">Share</string>
+    <string name="share_dialog_message">Share with your friend!</string>
+    <string name="share_sms_message">Hey! Check out this cool film I found.</string>
+    <string name="share_hint_text">Enter phone number</string>
+    <string name="share_sent_toast_confirm_message">Message Sent</string>
+    <string name="share_sent_error_toast_message">Please enter all the data..</string>
+    <string name="send_btn_text">Send</string>
+    <string name="leave_dialog_title">Leave?</string>
+    <string name="leave_dialog_message">Are you sure that you want to exit now?</string>
+
 <!-- names -->
     <string name="witcher_name">The Witcher</string>
     <string name="utopia_name">Utopia</string>

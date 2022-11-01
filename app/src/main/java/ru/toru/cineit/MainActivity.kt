@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        initRecycler()
+
         findViewById<MaterialButton>(R.id.favoritesList).setOnClickListener{
             val intent = Intent(this@MainActivity, FilmFavoritesActivity::class.java)
 
@@ -27,7 +29,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        initRecycler()
+
+        recyclerView.adapter?.notifyDataSetChanged()
         recyclerView.startLayoutAnimation()
     }
 
@@ -39,7 +42,6 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity, "Film Clicked", Toast.LENGTH_SHORT).show()
 
                 val intent = Intent(this@MainActivity, FilmDetailsActivity::class.java)
-                    .putExtra("id", filmItem.id)
                     .putExtra("cover", filmItem.cover)
                     .putExtra("description", filmItem.description)
                     .putExtra("isFavorite", filmItem.isFavorite)
@@ -62,12 +64,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         val builder = AlertDialog.Builder(this)
-            .setTitle("Leave?")
-            .setMessage("Are you sure that you want to exit now?")
-            .setNegativeButton("No") { dialog, which ->
+            .setTitle(R.string.leave_dialog_title)
+            .setMessage(R.string.leave_dialog_message)
+            .setNegativeButton(android.R.string.cancel) { dialog, which ->
                 return@setNegativeButton
             }
-            .setPositiveButton("Yes") { dialog, which ->
+            .setPositiveButton(android.R.string.ok) { dialog, which ->
                 super.onBackPressed()
             }
             .create()

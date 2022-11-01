@@ -36,19 +36,19 @@ class FilmDetailsActivity : AppCompatActivity() {
         var edit : String
 
         val builder = AlertDialog.Builder(this)
-            .setTitle("Dialog")
-            .setMessage("Share with your friend!")
-            .setNegativeButton("Cancel") { dialog, which -> }
-            .setPositiveButton("Send") { dialog, which ->
+            .setTitle(R.string.share_dialog_title)
+            .setMessage(R.string.share_dialog_message)
+            .setNegativeButton(android.R.string.cancel) { dialog, which -> }
+            .setPositiveButton(android.R.string.ok) { dialog, which ->
                 edit = editText.text.toString()
 
                 try {
                     val smsManager = SmsManager.getDefault()
-                    smsManager.sendTextMessage(edit, null, "Hey! Check out this cool film I found.", null, null)
-                    Toast.makeText(applicationContext, "Message Sent", Toast.LENGTH_LONG).show()
+                    smsManager.sendTextMessage(edit, null, getString(R.string.share_sms_message), null, null)
+                    Toast.makeText(applicationContext, getString(R.string.share_sent_toast_confirm_message), Toast.LENGTH_LONG).show()
 
                 } catch (e: Exception) {
-                    Toast.makeText(applicationContext, "Please enter all the data.."+e.message.toString(), Toast.LENGTH_LONG)
+                    Toast.makeText(applicationContext, getString(R.string.share_sent_error_toast_message) + e.message.toString(), Toast.LENGTH_LONG)
                         .show()
                 }
             }

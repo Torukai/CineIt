@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 
 class FilmFavoritesActivity: AppCompatActivity() {
 
-
     private val recyclerView by lazy { findViewById<RecyclerView>(R.id.recyclerFavorites) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
